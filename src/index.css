@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body{git
     height: 100vh;
     background-color: #0b2434;
     padding: 20px;
@@ -65,7 +65,7 @@ main{
 
 .roll-dice{
     height: 50px;
-    width: 100px;
+    width: 120px;
     border-radius: 10px;
     background-color: rgb(71, 71, 224);
     color: white;
