@@ -1,18 +1,67 @@
-# React + Vite
+# Tenzies — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple implementation of the classic "Tenzies" dice game built with React and Vite.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Playable single-page game where you roll 10 dice and try to make them all show the same number.
+- Click a die to "hold" it so it won't re-roll. Keep rolling the rest until all dice match.
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- 10 dice with hold/unhold interaction
+- Roll button to re-roll non-held dice
+- Visual held-state styling
 
-Note: This will impact Vite dev & build performances.
+## Technology
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- nanoid (for unique IDs)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview a production build locally:
+
+```bash
+npm run preview
+```
+
+## How to play
+
+1. Click the **Roll Dice** button to roll all dice.
+2. Click any die to toggle its held state (held dice are excluded from subsequent rolls).
+3. Keep rolling until all dice show the same number.
+
+## Project structure
+
+- `src/` — application source
+- `Components/Die.jsx` — die component
+- `src/App.jsx` — main game logic
+
+## Notes
+
+- Ensure your git commits use a configured `user.name` and `user.email` so pushes are attributed correctly.
+
+## License
+
+This project is provided as-is.
+
