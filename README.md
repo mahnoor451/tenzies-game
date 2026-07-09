@@ -7,6 +7,10 @@ Simple implementation of the classic "Tenzies" dice game built with React and Vi
 - Playable single-page game where you roll 10 dice and try to make them all show the same number.
 - Click a die to "hold" it so it won't re-roll. Keep rolling the rest until all dice match.
 
+## Live demo
+
+Try the project here: https://tenzies-game-zc9c.vercel.app/
+
 ## Features
 
 - 10 dice with hold/unhold interaction
