@@ -15,8 +15,8 @@ body{
 }
 
 div#root{
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 500px;
+    max-height: 500px;
     height: 100%;
     width: 100%;
 }
@@ -40,8 +40,9 @@ main{
 .instructions{ 
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    margin-top: 10px;
+    margin-block: 10px;
     text-align: center;
+    max-width: 350px;
 }
 
 .container{
@@ -98,4 +99,22 @@ main{
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+.timer-container{
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pseudo::after{
+    content: ":";
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 10px;
 }
